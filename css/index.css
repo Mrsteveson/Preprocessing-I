@@ -109,7 +109,7 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  list-style: disc;
 }
 blockquote,
 q {
@@ -142,7 +142,7 @@ body {
 .container {
   max-width: 880px;
   margin: 0 auto;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   line-height: 1.25;
   font-family: Verdana, "sans-serif";
   margin: 5px 0;
@@ -201,9 +201,19 @@ header a {
 .top-content p {
   font-size: 16px;
   background: rgba(219, 203, 203, 0.63);
+  font-weight: bold;
 }
 .top-content h2 {
   text-align: center;
+  border-bottom: 1px dashed black;
+  padding-bottom: 5px;
+}
+.top-content p {
+  padding: 10px;
+}
+.top-content strong {
+  font-weight: bold;
+  color: blue;
 }
 .the-middle {
   margin: 5px 0;
@@ -213,7 +223,7 @@ header a {
   border-right: 2px solid blue;
   border-left: 2px solid blue;
 }
-.the-middle p {
+.the-middle ul {
   padding: 10px 30px;
 }
 .the-middle h3 {

@@ -33,7 +33,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: disc;
 }
 blockquote, q {
 	quotes: none;
@@ -64,7 +64,7 @@ html, body {
 @third-color: @blizzard-blue;
 @blizzard-blue: #96EEEB;
 
-// Media Queries
+// Media Queries "Escapes"
 @mobile: ( max-width: 515px );
 
 // Mixins here
@@ -88,7 +88,7 @@ html, body {
 .container {
 	max-width: 880px;
 	margin: 0 auto;
-	font-size: 1.25rem;
+	font-size: 1.15rem;
 	line-height: 1.25;
 	font-family: @font-stack;
 	.bordered;
@@ -136,15 +136,25 @@ header {
 	h2, p {
 		font-size: 16px;
 		background: rgba(219, 203, 203, 0.63);
+		font-weight: bold;
 	}
 	h2 {
 		text-align: center;
+		border-bottom: 1px dashed black;
+		padding-bottom: 5px;
+	}
+	p {
+		padding: 10px;
+	}
+	strong {
+		font-weight: bold;
+		color: blue;
 	}
 }
 
 .the-middle {
 	.bordered;
-	p{
+	ul{
 		padding: 10px 30px;
 	}
 	h3 {
