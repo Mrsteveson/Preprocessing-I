@@ -144,11 +144,13 @@ body {
   margin: 0 auto;
   font-size: 1.25rem;
   line-height: 1.25;
+  margin: 5px 0;
   padding: 20px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   border-right: 2px solid red;
   border-left: 2px solid red;
+  background: lightgray;
 }
 @media ( max-width: 515px ) {
   .container {
@@ -157,32 +159,78 @@ body {
 }
 header {
   display: flex;
-  justify-content: center;
-  align-items: space-between;
+  justify-content: space-between;
   margin-left: 0;
   width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
   text-decoration: none;
 }
+h3 {
+  text-align: center;
+  border-bottom: 1px dashed black;
+  padding-bottom: 5px;
+}
 .the-top {
+  width: 100%;
+  height: 500px;
+  background-image: url("../Me-Jolie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px 0;
   padding: 20px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   border-right: 2px solid red;
   border-left: 2px solid red;
+  display: flex;
+  justify-content: flex-end;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: red;
+}
+.top-content h2,
+.top-content p {
+  font-family: Verdana, "sans-serif";
+  font-size: 16px;
+  background: rgba(219, 203, 203, 0.281);
+}
+.top-content h2 {
+  text-align: center;
 }
 .the-middle {
+  margin: 5px 0;
   padding: 20px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   border-right: 2px solid red;
   border-left: 2px solid red;
 }
+.the-middle p {
+  padding: 10px 30px;
+}
 .the-bottom {
+  margin: 5px 0;
   padding: 20px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   border-right: 2px solid red;
   border-left: 2px solid red;
+}
+.the-bottom P {
+  padding: 10px 30px;
 }
 footer {
   display: flex;

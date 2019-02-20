@@ -59,13 +59,17 @@ html, body {
 
 // Hi Patty, lets put our variables here.
 @font-stack: Verdana, "sans-serif";
-
+@first-color: red;
+@second-color: black;
+@third-color: @blizzard-blue;
+@blizzard-blue: #96EEEB;
 
 // Media Queries
 @mobile: ( max-width: 515px );
 
 // Mixins here
 .bordered() {
+	margin: 5px 0;
 	padding: 20px;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
@@ -87,6 +91,7 @@ html, body {
 	font-size: 1.25rem;
 	line-height: 1.25;
 	.bordered;
+	background: lightgray;
 	@media @mobile {
 		background: lightpink;
 }
@@ -94,25 +99,81 @@ html, body {
 
 header {
 	display: flex;
-	justify-content: center;
-	align-items: space-between;
+	justify-content: space-between;
 	margin-left: 0;
 	width: 100%;
-	text-decoration: none;
+	nav{
+		display: flex;
+		justify-content: space-between;
+		width:70%;
+	}
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+	}
+	a {
+		text-decoration: none;
+	}
 }
 
+
+
+
+h3 {
+	text-align: center;
+	border-bottom: 1px dashed black;
+	padding-bottom: 5px;
+
+}
+
+// .profile-pic {
+// 	position: relative;
+// 	width: 100%;
+// 	height: auto;
+// 	img {
+// 		position: absolute;
+// }
+// }
+
 .the-top {
+	width: 100%;
+	height: 500px;
+	background-image: url("../Me-Jolie.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	.bordered;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.top-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	color: red;
+	h2, p {
+		font-family: @font-stack;
+		font-size: 16px;
+		background: rgba(219, 203, 203, 0.281);
+	}
+	h2 {
+		text-align: center;
+	}
 }
 
 .the-middle {
 	.bordered;
+	p{
+		padding: 10px 30px;
+	}
 }
 
 .the-bottom {
 	.bordered;
+	P {
+		padding: 10px 30px;
+	}
 }
-
 
 footer {
 	.flexbox;
