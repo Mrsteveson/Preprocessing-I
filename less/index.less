@@ -57,3 +57,63 @@ html, body {
     height: 100%;
 }
 
+// Hi Patty, lets put our variables here.
+@font-stack: Verdana, "sans-serif";
+
+
+// Media Queries
+@mobile: ( max-width: 515px );
+
+// Mixins here
+.bordered() {
+	padding: 20px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid red;
+	border-left: 2px solid red;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// Hi Patty, code starts here bro.
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+	font-size: 1.25rem;
+	line-height: 1.25;
+	.bordered;
+	@media @mobile {
+		background: lightpink;
+}
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+	margin-left: 0;
+	width: 100%;
+	text-decoration: none;
+}
+
+.the-top {
+	.bordered;
+}
+
+.the-middle {
+	.bordered;
+}
+
+.the-bottom {
+	.bordered;
+}
+
+
+footer {
+	.flexbox;
+}

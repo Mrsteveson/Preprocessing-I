@@ -134,3 +134,58 @@ html,
 body {
   height: 100%;
 }
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+}
+@media ( max-width: 515px ) {
+  .container {
+    background: lightpink;
+  }
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  margin-left: 0;
+  width: 100%;
+  text-decoration: none;
+}
+.the-top {
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+}
+.the-middle {
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+}
+.the-bottom {
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
