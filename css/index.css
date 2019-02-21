@@ -1,1 +1,258 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: disc;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.centerbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  font-family: Verdana, "sans-serif";
+  margin: 5px 0;
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid blue;
+  border-left: 2px solid blue;
+  background: #ee9b9b;
+}
+@media ( max-width: 515px ) {
+  .container {
+    background: #96EEEB;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+}
+.the-top {
+  width: 100%;
+  height: 500px;
+  background-image: url("../Me-Jolie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px 0;
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid blue;
+  border-left: 2px solid blue;
+  display: flex;
+  justify-content: flex-end;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: black;
+}
+.top-content h2,
+.top-content p {
+  font-size: 16px;
+  background: rgba(219, 203, 203, 0.63);
+  font-weight: bold;
+}
+.top-content h2 {
+  text-align: center;
+  border-bottom: 1px dashed black;
+  padding-bottom: 5px;
+}
+.top-content p {
+  padding: 10px;
+}
+.top-content strong {
+  font-weight: bold;
+  color: blue;
+}
+.the-middle {
+  margin: 5px 0;
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid blue;
+  border-left: 2px solid blue;
+}
+.the-middle ul {
+  padding: 10px 30px;
+}
+.the-middle h3 {
+  text-align: center;
+  border-bottom: 1px dashed black;
+  padding-bottom: 5px;
+}
+.the-bottom {
+  margin: 5px 0;
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid blue;
+  border-left: 2px solid blue;
+}
+.the-bottom P {
+  padding: 10px 30px;
+  text-align: center;
+}
+.the-bottom ul {
+  padding: 10px 30px;
+}
+.the-bottom h3 {
+  text-align: center;
+  border-bottom: 1px dashed black;
+  padding-bottom: 5px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
